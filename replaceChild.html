@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <div id="content">
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+
+        <input type="button" value="Replace" id="btn-replace"/>
+
+        <script language="javascript">
+           var button = document.getElementById('btn-replace');
+
+           button.addEventListener('click',function () {
+              var p = document.createElement('p');
+              p.innerHTML='HELLO HELLO HELLO';
+              var position = document.getElementsByTagName('h5')[0];
+              document.getElementById('content').replaceChild(p,position);
+           });
+        </script>
+    </body>
+</html>

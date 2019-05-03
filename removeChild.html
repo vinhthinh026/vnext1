@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div id="content">
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+
+        <input type="button" value="Remove" id="btn-remove"/>
+
+        <script language="javascript">
+            var button = document.getElementById('btn-remove');
+
+            button.addEventListener('click',function () {
+               var remove = document.getElementsByTagName('h5')[0];
+               document.getElementById('content').removeChild(remove);
+            });
+        </script>
+    </body>
+</html>

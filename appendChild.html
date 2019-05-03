@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <div id="TOP">
+            Xin chào các bạn!
+        </div>
+
+        <input type="button" value="Append" id="btn-append"/>
+
+        <script language="javascript">
+            var button = document.getElementById('btn-append');
+
+            button.addEventListener('click',function () {
+                var p = document.createElement('p');
+                var text = document.createTextNode("HELLO HELLO HELLO");
+                p.appendChild(text);
+                document.getElementById('TOP').appendChild(p);
+            });
+        </script>
+    </body>
+</html>

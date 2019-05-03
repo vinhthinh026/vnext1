@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script language="javascript">
+            var getcontent = document.getElementById('get_content');
+            function get_content() {
+                var divContent = document.getElementById('content').innerHTML;
+                alert(divContent);
+            }
+            function set_content() {
+                var divContent = document.getElementById('content').innerHTML = "<h1>Nội dung đã thay đổi</h1>";
+            }
+
+            function change() {
+                var object = document.getElementById('object');
+
+                if(object.type == "button"){
+                    object.type ="textbox";
+                } else {
+                    object.type = "button";
+                }
+            }
+
+        </script>
+        <div id="content">Nội dung của thẻ DIV</div>
+        <input type="button" value="Lấy nội dung" id="get_content" onclick="return get_content()"/>
+        <input type="button" value="Thay đổi nội dung" id="set_content" onclick="set_content()" />
+        <input type="button" value="CLick me" onclick="change()" id="object" />
+    </body>
+</html>

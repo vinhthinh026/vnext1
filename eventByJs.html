@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <ul>
+            <li><a href="#" class="show">Tin công nghệ</a></li>
+            <li><a href="#">Tin trong nước</a></li>
+            <li><a href="#" class="show">Tin thời sự</a></li>
+        </ul>
+        <script language="javascript">
+            // Lấy đối tượng
+            var a_list = document.getElementsByClassName('show');
+            for(var i = 0 ; i<=a_list.length; i++){
+                a_list[i].onclick = function () {
+                    alert('hello');
+                }
+            }
+        </script>
+    </body>
+</html>

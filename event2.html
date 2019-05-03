@@ -1,0 +1,22 @@
+<html>
+<body>
+<script language="javascript">
+    // Hàm tính kết quả
+    function tinh()
+    {
+       var inputA = document.getElementById('a');
+       var inputB = document.getElementById('b');
+       var result = document.getElementById('result');
+
+       var tong = parseInt(inputA.value)+parseInt(inputB.value);
+
+       if(tong!=0){
+           result.value = tong;
+       }
+    }
+</script>
+a: <input type="text" id="a" value="" onkeyup="tinh()"/>
+b: <input type="text" id="b" value="" onkeyup="tinh()"/>
+Kết quả: <input type="text" id="result" value=""/>
+</body>
+</html>

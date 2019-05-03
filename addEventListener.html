@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <input type="text" id="txt-val" value="" />
+        <div id="result"></div>
+        <script language="javascript">
+            // Lấy đối tượng
+           var inputt = document.getElementById('txt-val');
+           var result = document.getElementById('result');
+
+           inputt.addEventListener('keyup',function () {
+              result.innerHTML = inputt.value;
+           });
+        </script>
+    </body>
+</html>

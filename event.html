@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script language="javascript">
+            // Hàm show kết quả
+            function show_result()
+            {
+              var inputText = document.getElementById('message');
+              var result = document.getElementById('result');
+
+                result.innerHTML = inputText.value;
+            }
+        </script>
+        <input type="text" id="message" value="" onkeyup="show_result()"/>
+        <div id="result"></div>
+    </body>
+</html>

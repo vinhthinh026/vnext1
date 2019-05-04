@@ -1,0 +1,24 @@
+<script>
+    // khởi tạo một đối tượng date
+    var timeObj = new Date(); // lấy thời gian hiện tại trên máy tính
+
+    // định dạng format date trong js
+        // định dạng iso (YYYY-MM-DD) or(YYYY-MM) or (YYYY)
+        var ISO_1 = new Date("2014-11-20");
+        var ISO_2 = new Date("2014-11");
+        var ISO_3 = new Date("2014");
+
+        // định dạng long
+        var LONG_1 = new Date("Mar 25 2015");//truyền vào tháng = 3 chữ cái tiếng anh và đặt ở đâu cũng đc
+        var LONG_2 = new Date("2015 Mar 25");
+        var LONG_3 = new Date("25 2015 Mar");
+
+        // định dạng short
+        var SHORT_1 = new Date("03-25-2015");
+        var SHORT_2 = new Date("03/25/2015");
+        var SHORT_3 = new Date("2015/03/25");
+        var SHORT_4 = new Date("2015-03-25");
+
+        // định dạng đầy đủ (ngày - tháng - năm - giờ - phút - giây - timezone)
+        var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
+</script>

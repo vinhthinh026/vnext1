@@ -1,0 +1,40 @@
+<script>
+    // hàm Number() dùng để chuyển một giá trị nào đó sang số
+    var boolean_true = true;
+    var boolean_false = false;
+    var string_str = '10helloxinchao';
+    var string_num = '100';
+    var date = new Date();
+
+    document.write("boolean_true: " + Number(boolean_true) + "<br/>");
+    document.write("boolean_false " + Number(boolean_false) + "<br/>");
+    document.write("string_str " + Number(string_str) + "<br/>");
+    document.write("string_num " + Number(string_num) + "<br/>");
+    document.write("date " + Number(date) + "<br/>");
+
+    // hàm parseInt chuyển một chuỗi sang number , nếu k phải chuỗi sẽ chuyển sang kiểu NaN
+    var boolean_true = true;
+    parseInt(boolean_true); // returns NaN
+
+    var boolean_false = false;
+    parseInt(boolean_false);// returns NaN
+
+    var string_str = '10 freetuts.net';
+    parseInt(string_str);   // returns 10
+
+    var string_num = '100';
+    parseInt(string_num);   // returns 100
+
+    var date = new Date();
+    parseInt(boolean_true); // returns NaN
+
+    //hàm parseFloat giống hàm parseInt nhưng chuyển sang kiểu float
+
+    // hàm toFixed chuyển một số sang một số có n số lẻ ở sau nó và có làm tròn.
+    var x = 5.656;
+    x.toFixed(0); // returns 6
+    x.toFixed(2); // returns 5.66
+    x.toFixed(4); // returns 5.6560
+    x.toFixed(6); // returns 5.656000
+
+</script>

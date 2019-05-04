@@ -1,0 +1,21 @@
+<script>
+    // khai báo mảng
+    var name_array = new Array(1,2,3); // cách 1
+    var name_array2=[1,2,3];
+
+    // truy xuất đến một phần tử của mảng
+    document.write(name_array[0]);
+
+    //hiển thị các phần tử ra ngoài trình duyệt sử dụng join
+    document.write('</br>');
+    document.write(name_array2.join());
+    document.write('</br>');
+    document.write(name_array2.join('-'));
+
+    // lặp mảng
+    for(var i=0; i<name_array2.length; i++){
+        document.write('</br>')
+        document.write(name_array2[i]);
+    }
+
+</script>

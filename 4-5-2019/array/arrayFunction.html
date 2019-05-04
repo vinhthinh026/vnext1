@@ -1,0 +1,45 @@
+<script>
+    // hàm valueOf nối các phần tử cách nhau bởi dấu ,
+    var mang = ['H,e,l,l,o,x,i,n,c,h,a,o'];
+    document.write(mang.valueOf());
+
+    // hàm push thêm một phần tử vào cuối mảng
+    document.write('</br>');
+    mang.push('nha');
+    document.write(mang);
+
+    // hàm pop xóa phần tủ cuối trong mảng
+    document.write('</br>');
+    mang.pop();
+    document.write(mang);
+
+    // hàm unshift thêm một phần tử vào đầu mảng
+    document.write('</br>');
+    mang.unshift('Thêm đầu');
+    document.write(mang);
+
+    // hàm sort để sắp xếp các phần tử trong mảng trong kí tự alpha
+    document.write('</br>');
+    mang.sort()
+    document.write(mang);
+
+    // hàm reverse dùng để đảo ngược mảng lại
+    document.write('</br>');
+    var daoNguoc = [1,2,3,4,5,6];
+    daoNguoc.reverse();
+    document.write(daoNguoc.valueOf());
+
+    // hàm concat() để nối 2 mảng và trả về mảng gồm tổng hai phần tủ của mảng đó
+    document.write('<br/>')
+    var mang1 = [1,2,3,4];
+    var mang2 = [5,6,7,8];
+    var noiMang = mang1.concat(mang2);
+    document.write(noiMang.valueOf());
+
+    // hàm slice để cắt mảng từ một mảng cha
+    document.write('<br/>')
+    var mang = ["Học", "lập", "trình", "tại", "freetuts.net"];
+    var mang_moi = mang.slice(3,5);
+    document.write(mang_moi.valueOf());
+
+</script>

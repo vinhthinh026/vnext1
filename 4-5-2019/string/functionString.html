@@ -1,0 +1,35 @@
+<script>
+    //hàm indexOf tìm kiếm chuỗi con trong chuỗi cha,trả về vị trí xuất hiện đầu tiên của cha , trả về -1 nếu không tìm thấy
+    var string =  "hello xin chào";
+    document.write('Vị trí xuất hiện của chuỗi là: ' + string.indexOf('xin'));
+
+    document.write('<br/>')
+
+    //hàm lastIndexof  trong trường hợp chuỗi con xuất hiện nhiều lần , hàm sẽ trả về vị trí xuất hiện cuối cùng của chuỗi con , trả về -1 nêu k thấy
+    var string2 =  "hello xin chào hello";
+    document.write('Vị trí xuất hiện của chuỗi là: ' + string.lastIndexOf('string2'));
+
+    document.write('<br/>')
+
+    //ham search tìm kiếm chuỗi con trong chuỗi cha giống hàm indexOf()
+    var string3 = "hello xin chào";
+    document.write('Vị trí xuất hiện của chuỗi là: '+string3.search('xin'));
+
+    document.write('<br/>')
+    //hàm slice cắt một chuỗi từ chuỗi cha , nếu tham số truyền vào là số âm thì sẽ đếm từ cuối lên
+    var string4 = 'xin chào đây là chuỗi cha';
+    var cutSring = string4.slice(4,9) // (vị trí bắt đầu,vị trí kết thúc)
+    document.write('slice: '+ cutSring);
+
+    document.write('<br/>')
+
+    // hàm substring() giống hàm slice nhưng tham số truyền vào phải lớn hơn 0
+    var string5 = "xin chào đây là chuỗi cha";
+    document.write('substring: ' + string5.substring(0,3));
+
+    document.write('<br/>')
+    // hàm replace(str_find, str_replace) tìm kiếm và thay đổi
+    var string6 = "Xin chào đây là chuỗi cha";
+    document.write(string6.replace('cha','bố'))
+
+</script>

@@ -1,0 +1,23 @@
+<script>
+    // lấy chiều dài và chiều cao của của trình duyệt
+    var width = window.innerWidth
+        || document.documentElement.clientWidth // Internet Explorer
+        || document.body.clientWidth;
+
+    var height = window.innerHeight
+        || document.documentElement.clientHeight //Internet Explorer
+        || document.body.clientHeight;
+
+    // mở một cửa sổ với lệnh window.open(website, đặt tên , thông số hiển thị)
+    windowChild = window.open('https://zing.vn', "windowChild", "width=500, height=500")
+
+    //đóng một cửa sổ với lệnh window.close()
+    windowChild.close(); // windowChild cửa sổ sử dụng window.open tạo ra
+
+    // di chuyển cửa sổ với lệnh window.moveTo(top,left)
+    windowChild.moveTo(500, 100);
+
+    // thay đổi kích thước sau khi open môt cửa sổ
+    windowChild.resizeTo(1000,1000);
+
+</script>

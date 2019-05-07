@@ -1,0 +1,43 @@
+<script>
+    Number.prototype.plus = function (value) {
+      return this.valueOf()+parseInt(value);
+    };
+
+    var number = new Number(3);
+    document.write(number.plus(12));
+
+    document.write("</br>");
+
+    var year = 2014;
+    document.write(year.plus(12));
+
+    function Person(){
+        // Thuộc tính
+      this.name = "";
+      this.email = "";
+      this.address = "";
+
+        // Phương thức
+        this.showInfo = function(){
+            document.write("Tên là :"+ this.name +"</br>");
+            document.write("email là: "+this.email+"</br>");
+            document.write("Địa chỉ :"+this.address+"<br>");
+        };
+    }
+
+    var cuong = new Person();
+
+    // Gán thuộc tính
+    cuong.name = "Nguyễn Văn Cường";
+    cuong.email = "thehalfheart@gmail.com";
+    cuong.address = "Buôn Ma Thuột ĐăkLăk";
+
+    Person.prototype.phone = "";
+    Person.prototype.showPhone = function () {
+      document.write("phone là :"+this.phone+"</br>");
+    };
+    // Gọi phương thức
+    cuong.showInfo();
+    cuong.phone="123123123";
+    cuong.showPhone();
+</script>

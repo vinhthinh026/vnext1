@@ -1,0 +1,31 @@
+<html>
+<body>
+<script>
+    function replace1() {
+        window.location.assign('https://news.zing.vn/');
+    }
+    function replace3() {
+        window.location.assign('https://translate.google.com.vn/?hl=en&tab=wT&authuser=0#view=home&op=translate&sl=en&tl=vi&text=review');
+
+    }
+
+    function replace2() {
+        window.location.assign('https://freetuts.net/bom-history-trong-javascript-387.html');
+    }
+
+    function go() {
+        history.go();
+    }
+    function lengthHistory() {
+        var length = history.length;
+        document.write(length);
+    }
+
+</script>
+<input type="button" value="zing.vn" id="get_content" onclick="return replace1()"/>
+<input type="button" value="freetuts.com" id="set_content" onclick="return replace2()" />
+<input type="button" value="replace3"  onclick="return replace3()" />
+<input type="button" value="back" onclick="return back()" id="object" />
+<input type="button" value="length" onclick="return lengthHistory()"  />
+</body>
+</html>

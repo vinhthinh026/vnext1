@@ -1,0 +1,57 @@
+<script>
+   var student = {
+        data : [],
+
+       addStudent : function (id , name , email) {
+            var item = {
+                id : id,
+                name : name,
+                email : email,
+            };
+
+            this.data.push(item);
+       },
+       viewStudent : function () {
+            var listStudent = this.data;
+
+            for(var i=0; i<listStudent.length; i++){
+                document.write('ID :'+listStudent[i].id+ '| Name :'+ listStudent[i].name + '| Email :' +listStudent[i].email +"</br>");
+            }
+       },
+       removeStudent : function (id) {
+           var listStudent = this.data;
+
+            for(var i = 0 ; i<listStudent.length; i++){
+                if(listStudent[i].id == id){
+                    this.data.pop(i,1);
+                }
+            }
+       },
+       editStudent : function (id,name,email) {
+           var listStudent = this.data;
+           for(var i = 0 ; i<listStudent.length; i++){
+               if(listStudent[i].id === id){
+
+                   if(name!= "" && email!= ""){
+                       this.data[i].name = name;
+                       this.data[i].email = email;
+                   }
+
+                   if(name!= ""){
+                       this.data[i].name = name;
+                   }
+
+                   if(email!= ""){
+                       this.data[i].email = email;
+                   }
+               }
+           }
+       },
+   };
+
+   student.addStudent(1, 'student1', 'student1@gmail.com');
+   student.addStudent(2, 'student2', 'student2@gmail.com');
+   student.removeStudent(2);
+   student.editStudent(1,'hello2' , 'email11@gmail.com')
+   student.viewStudent();
+</script>

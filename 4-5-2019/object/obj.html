@@ -1,0 +1,54 @@
+<script>
+    var Comment = {
+        title:"tiêu đề",
+        content :"nội dung",
+        fullname :"tên đầy đủ",
+        email:"email",
+
+        addComment : function () {
+            document.write(this.title);
+        },
+        validateComment : function () {
+
+        },
+    };
+
+    // đối tượng chứa đối tượng
+
+    var comment = {
+        info : {
+            title:"tiêu đề",
+            content :"nội dung",
+            fullname :"tên đầy đủ",
+            email:"email",
+        },
+
+        func : {
+            addComment : function () {
+              document.write(comment.info.title);
+            },
+
+            validateComment : function () {
+
+            },
+
+        }
+    };
+
+    // mảng chứa đối tượng
+        var comment1  = [{
+            title:"tiêu đề",
+            content :"nội dung",
+            fullname :"tên đầy đủ",
+            email:"email",
+
+            addComment : function () {
+                document.write(this.title);
+            }
+        }];
+
+        comment1[0].title = "tiêu đề 1";
+
+        comment1[0].addComment();
+
+</script>
